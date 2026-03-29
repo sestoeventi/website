@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — Agenzia di eventi a Venezia | SESTO</title>
+  <meta name="description" content="Contattaci per il tuo evento a Venezia. Brief gratuito, risposta entro 24 ore lavorative. Telefono, email, form contatti.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-text">
+          <span class="header__logo-name">SESTO</span>
+          <span class="header__logo-payoff">Event Project Management</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="chi-siamo.html" class="nav__link">Chi siamo</a>
+        <a href="servizi.html" class="nav__link">Servizi</a>
+        <a href="location-scouting.html" class="nav__link">Location</a>
+        <a href="matrimoni.html" class="nav__link">Matrimoni</a>
+        <a href="cene-di-gala.html" class="nav__link">Gala</a>
+        <a href="esperienze.html" class="nav__link">Esperienze</a>
+        <a href="dmc.html" class="nav__link">DMC</a>
+        <a href="contatti.html" class="nav__link">Contatti</a>
+        <a href="../en/index.html" class="nav__lang">EN</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--service hero--has-image">
+      <div class="hero__bg" style="background-image: url('../img/hero-servizi.jpg')"></div>
+      <div class="hero__inner"><div class="hero__content">
+        <span class="hero__label">Contatti</span>
+        <h1 class="hero__title">Inviateci il brief. Vi rispondiamo entro 24 ore lavorative.</h1>
+      </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section">
+      <div class="container">
+        <div class="section__content">
+          <p>Non serve avere un brief strutturato per contattarci. È sufficiente descrivere il tipo di evento, la data indicativa e il numero di partecipanti. Il resto lo definiamo insieme nella prima call.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="section section--light">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Form -->
+          <div class="contact-form-wrapper">
+            <h2>Il tuo brief</h2>
+            <!-- Messaggio di successo (nascosto inizialmente) -->
+            <div id="formSuccess" style="display:none;" class="form-success">
+              <div class="form-success__icon">✓</div>
+              <h3>Brief ricevuto.</h3>
+              <p>Grazie per averci contattato. Ti risponderemo entro 24 ore lavorative all'indirizzo email che hai indicato.</p>
+            </div>
+
+            <!-- Messaggio di errore (nascosto inizialmente) -->
+            <div id="formError" style="display:none;" class="form-error">
+              <p>Si è verificato un errore nell'invio. Riprova oppure scrivici direttamente a <a href="mailto:info@sestoeventi.it">info@sestoeventi.it</a>.</p>
+            </div>
+
+            <form class="form" id="contactForm"
+                  action="https://formspree.io/f/mzdkezow"
+                  method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-group__label">Nome / Azienda</label>
+                  <input type="text" id="name" name="name" class="form-group__input" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-group__label">Email</label>
+                  <input type="email" id="email" name="email" class="form-group__input" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone" class="form-group__label">Telefono</label>
+                  <input type="tel" id="phone" name="phone" class="form-group__input">
+                </div>
+                <div class="form-group">
+                  <label for="role" class="form-group__label">Ruolo</label>
+                  <select id="role" name="role" class="form-group__select">
+                    <option value="">Seleziona un ruolo</option>
+                    <option value="event-manager">Event Manager</option>
+                    <option value="wedding-planner">Wedding Planner</option>
+                    <option value="agency">Agenzia</option>
+                    <option value="corporate">Corporate</option>
+                    <option value="private">Privato</option>
+                    <option value="other">Altro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="event-type" class="form-group__label">Tipo di evento</label>
+                  <select id="event-type" name="event-type" class="form-group__select">
+                    <option value="">Seleziona un tipo</option>
+                    <option value="matrimonio">Matrimonio</option>
+                    <option value="gala">Cena di Gala</option>
+                    <option value="conferenza">Conferenza</option>
+                    <option value="incentive">Incentive Travel</option>
+                    <option value="team-building">Team Building</option>
+                    <option value="compleanno">Compleanno / Anniversario</option>
+                    <option value="esperienze">Esperienze / Tour</option>
+                    <option value="altro">Altro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date" class="form-group__label">Data indicativa</label>
+                  <input type="text" id="date" name="date" class="form-group__input" placeholder="es. Giugno 2026">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests" class="form-group__label">Numero di partecipanti indicativo</label>
+                  <input type="number" id="guests" name="guests" class="form-group__input" placeholder="es. 150">
+                </div>
+                <div class="form-group">
+                  <label for="budget" class="form-group__label">Budget indicativo</label>
+                  <select id="budget" name="budget" class="form-group__select">
+                    <option value="">Seleziona una fascia</option>
+                    <option value="under-10k">Sotto € 10.000</option>
+                    <option value="10-25k">€ 10.000 - € 25.000</option>
+                    <option value="25-50k">€ 25.000 - € 50.000</option>
+                    <option value="50-100k">€ 50.000 - € 100.000</option>
+                    <option value="over-100k">Oltre € 100.000</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="brief" class="form-group__label">Brief / Note</label>
+                <textarea id="brief" name="brief" class="form-group__textarea" rows="6" placeholder="Descrivi il tuo evento, i tuoi desideri, le esigenze specifiche..."></textarea>
+              </div>
+
+              <!-- Campi nascosti Formspree -->
+              <input type="hidden" name="_subject" value="Nuovo brief — SESTO Event Project Management">
+              <input type="hidden" name="_replyto" value="">
+              <input type="hidden" name="_language" value="it">
+
+              <button type="submit" class="btn btn--primary" id="submitBtn">Invia il tuo brief</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <aside class="contact-info">
+            <h3>Contattaci direttamente</h3>
+
+            <div class="contact-info__item">
+              <h4 class="contact-info__label">Email</h4>
+              <p class="contact-info__value"><a href="mailto:info@sestoeventi.it">info@sestoeventi.it</a></p>
+            </div>
+
+            <div class="contact-info__item">
+              <h4 class="contact-info__label">Indirizzo</h4>
+              <p class="contact-info__value">Via San Nicolò, 42, 31100 Treviso TV</p>
+            </div>
+
+            <div class="contact-info__item">
+              <h4 class="contact-info__label">Orari</h4>
+              <p class="contact-info__value">Lunedì - Venerdì: 9:00 - 18:00<br>Sabato - Domenica: Su richiesta</p>
+            </div>
+
+            <div class="contact-info__highlight">
+              <p><strong>Tempi di risposta garantiti:</strong><br>24 ore lavorative per ogni brief ricevuto</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional CTA Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section__center">
+          <h2>Non sai da dove iniziare?</h2>
+          <p>Leggi le storie e le best practices dei nostri ultimi progetti.</p>
+          <div class="section__cta">
+            <a href="chi-siamo.html" class="btn btn--primary">Chi siamo</a>
+            <a href="servizi.html" class="btn btn--outline-white">Tutti i servizi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">SESTO</span>
+          <span class="footer__payoff">Event Project Management</span>
+          <p class="footer__desc">Agenzia di eventi esperienziali con base operativa a Venezia e nel Veneto. Partner locale per eventi privati, corporate e istituzionali.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Servizi</h4>
+          <ul class="footer__links">
+            <li><a href="location-scouting.html">Location Scouting</a></li>
+            <li><a href="matrimoni.html">Matrimoni</a></li>
+            <li><a href="cene-di-gala.html">Cene di Gala</a></li>
+            <li><a href="esperienze.html">Esperienze</a></li>
+            <li><a href="dmc.html">DMC Venezia</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Agenzia</h4>
+          <ul class="footer__links">
+            <li><a href="chi-siamo.html">Chi siamo</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contatti</h4>
+          <p class="footer__contact-item"><a href="mailto:info@sestoeventi.it">info@sestoeventi.it</a></p>
+          <p class="footer__contact-item">Via San Nicolò, 42, 31100 Treviso TV</p>
+          <p class="footer__contact-item" style="margin-top:20px; font-size:0.8rem;">Lib.Co S.r.l. &nbsp;·&nbsp; Via Cirenaica 19 &nbsp;·&nbsp; 31100 Treviso &nbsp;·&nbsp; P.IVA 05375380267 &nbsp;·&nbsp; SDI: P62QHVQ</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 SESTO — Event Project Management. Tutti i diritti riservati.</p>
+        <div class="footer__legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .form-success {
+      background: var(--color-offwhite);
+      border-left: 3px solid var(--color-gold);
+      padding: 48px 40px;
+      text-align: left;
+    }
+    .form-success__icon {
+      font-size: 2rem;
+      color: var(--color-gold);
+      margin-bottom: 16px;
+      font-weight: 300;
+    }
+    .form-success h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--color-black);
+      margin-bottom: 12px;
+    }
+    .form-success p {
+      color: var(--color-gray-600);
+      font-size: 1rem;
+      margin: 0;
+    }
+    .form-error {
+      background: #fff5f5;
+      border-left: 3px solid #c0392b;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+    .form-error p { color: #c0392b; margin: 0; font-size: 0.95rem; }
+    .btn--loading {
+      opacity: 0.7;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .btn--loading::after {
+      content: ' …';
+    }
+  </style>
+
+  <script>
+    // Navigazione mobile
+    document.querySelector('.nav__toggle').addEventListener('click', function(){
+      document.querySelector('.nav').classList.toggle('nav--open');
+    });
+
+    // Gestione invio form via Formspree (AJAX)
+    const form   = document.getElementById('contactForm');
+    const btn    = document.getElementById('submitBtn');
+    const success = document.getElementById('formSuccess');
+    const error   = document.getElementById('formError');
+
+    // Sincronizza il campo _replyto con l'email inserita
+    const emailInput = document.getElementById('email');
+    if (emailInput) {
+      emailInput.addEventListener('input', function() {
+        form.querySelector('[name="_replyto"]').value = this.value;
+      });
+    }
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      error.style.display = 'none';
+
+      // Invio via Formspree
+      const actionUrl = form.getAttribute('action');
+      btn.classList.add('btn--loading');
+      btn.textContent = 'Invio in corso';
+
+      try {
+        const data = new FormData(form);
+        const res  = await fetch(actionUrl, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          success.style.display = 'block';
+          success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          throw new Error('Server error ' + res.status);
+        }
+      } catch (err) {
+        error.style.display = 'block';
+        btn.classList.remove('btn--loading');
+        btn.textContent = 'Invia il tuo brief';
+      }
+    });
+  </script>
+</body>
+</html>

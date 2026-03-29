@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact SESTO event agency in Venice. Send your event brief. We respond within 24 business hours.">
+  <title>Contact — Event Agency in Venice</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-text">
+          <span class="header__logo-name">SESTO</span>
+          <span class="header__logo-payoff">Event Project Management</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="about.html" class="nav__link">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="location-scouting.html" class="nav__link">Locations</a>
+        <a href="weddings.html" class="nav__link">Weddings</a>
+        <a href="gala-dinners.html" class="nav__link">Gala</a>
+        <a href="experiences.html" class="nav__link">Experiences</a>
+        <a href="dmc.html" class="nav__link">DMC</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="../it/index.html" class="nav__lang">IT</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--has-image">
+      <div class="hero__bg" style="background-image: url('../img/hero-servizi.jpg')"></div>
+      <div class="hero__inner"><div class="hero__content">
+        <span class="hero__label">Contact</span>
+        <h1 class="hero__title">Send us your brief. We respond within 24 business hours.</h1>
+        <p class="hero__subtitle">You don't need a structured brief to get in touch. Simply describe the type of event, the approximate date and the number of participants. We'll define everything else together on the first call.</p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container contact-wrapper">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" method="POST" action="#">
+            <div class="form-group">
+              <label for="name" class="form-label">Name & Organisation</label>
+              <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Professional Email</label>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+            </div>
+
+            <div class="form-group">
+              <label for="role" class="form-label">Your Role</label>
+              <select id="role" name="role" class="form-select">
+                <option value="">Select your role</option>
+                <option value="event-manager">Event Manager</option>
+                <option value="wedding-planner">Wedding Planner</option>
+                <option value="hr-manager">HR Manager</option>
+                <option value="tour-operator">Tour Operator</option>
+                <option value="procurement">Procurement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="event-type" class="form-label">Event Type</label>
+              <select id="event-type" name="event_type" class="form-select">
+                <option value="">Select event type</option>
+                <option value="wedding">Wedding</option>
+                <option value="gala-dinner">Gala Dinner</option>
+                <option value="incentive">Incentive</option>
+                <option value="convention">Convention</option>
+                <option value="team-building">Team Building</option>
+                <option value="location-scouting">Location Scouting</option>
+                <option value="dmc">DMC</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date" class="form-label">Approximate Date</label>
+              <input type="text" id="date" name="date" class="form-input" placeholder="e.g., June 2026 or Summer 2026">
+            </div>
+
+            <div class="form-group">
+              <label for="participants" class="form-label">Number of Participants</label>
+              <input type="number" id="participants" name="participants" class="form-input" min="1">
+            </div>
+
+            <div class="form-group">
+              <label for="budget" class="form-label">Indicative Budget</label>
+              <select id="budget" name="budget" class="form-select">
+                <option value="">Select budget range</option>
+                <option value="up-to-10k">Up to €10,000</option>
+                <option value="10-30k">€10,000 - €30,000</option>
+                <option value="30-80k">€30,000 - €80,000</option>
+                <option value="80k-plus">€80,000+</option>
+                <option value="managed-by-end-client">Managed by end client</option>
+                <option value="not-defined">Not yet defined</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="brief" class="form-label">Brief / Notes</label>
+              <textarea id="brief" name="brief" class="form-textarea" rows="6" placeholder="Tell us about your event vision, requirements and any specific needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary">Send Request</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <aside class="contact-info">
+          <h3 class="contact-info__title">Get in Touch</h3>
+
+          <div class="contact-info__item">
+            <h4 class="contact-info__label">Phone</h4>
+          </div>
+
+          <div class="contact-info__item">
+            <h4 class="contact-info__label">Email</h4>
+            <p class="contact-info__text"><a href="mailto:info@sestoeventi.it">info@sestoeventi.it</a></p>
+          </div>
+
+          <div class="contact-info__item">
+            <h4 class="contact-info__label">Address</h4>
+            <p class="contact-info__text">Via San Nicolò, 42, 31100 Treviso TV</p>
+          </div>
+
+          <div class="contact-info__item">
+            <h4 class="contact-info__label">Response Time</h4>
+            <p class="contact-info__text">We guarantee a response within 24 business hours. No automated replies—just a thoughtful conversation about your event.</p>
+          </div>
+
+          <div class="contact-info__item">
+            <h4 class="contact-info__label">Company Details</h4>
+            <p class="contact-info__text" style="font-size: 0.85rem; line-height: 1.6;">Lib.Co S.r.l. &nbsp;·&nbsp; Via Cirenaica 19 &nbsp;·&nbsp; 31100 Treviso &nbsp;·&nbsp; P.IVA 05375380267 &nbsp;·&nbsp; SDI: P62QHVQ</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-box__title">Questions? Talk to our team directly.</h2>
+          <p class="cta-box__desc">Call or email us anytime. We're ready to discuss your event.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo">SESTO</span>
+          <span class="footer__payoff">Event Project Management</span>
+          <p class="footer__desc">Experiential events agency based in Venice and the Veneto region. Your local partner for private, corporate and institutional events.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="location-scouting.html">Location Scouting</a></li>
+            <li><a href="weddings.html">Weddings</a></li>
+            <li><a href="gala-dinners.html">Gala Dinners</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="dmc.html">DMC Venice</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Agency</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact</h4>
+          <p class="footer__contact-item"><a href="mailto:info@sestoeventi.it">info@sestoeventi.it</a></p>
+          <p class="footer__contact-item">Via San Nicolò, 42, 31100 Treviso TV</p>
+          <p class="footer__contact-item" style="margin-top:20px; font-size:0.8rem;">Lib.Co S.r.l. &nbsp;·&nbsp; Via Cirenaica 19 &nbsp;·&nbsp; 31100 Treviso &nbsp;·&nbsp; P.IVA 05375380267 &nbsp;·&nbsp; SDI: P62QHVQ</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 SESTO — Event Project Management. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.querySelector('.nav__toggle').addEventListener('click',function(){document.querySelector('.nav').classList.toggle('nav--open')});</script>
+</body>
+</html>
